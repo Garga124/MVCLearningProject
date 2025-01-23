@@ -2,15 +2,11 @@
 
 namespace MVCLearningProject.Controllers
 {
-    public class HomeController : Controller
+    public class CategoriesController : Controller
     {
         public IActionResult Index()
         {
             return View();
         }
-        //public string Error()
-        //{
-        //    return "I have an error here.";
-        //}
     }
 }
