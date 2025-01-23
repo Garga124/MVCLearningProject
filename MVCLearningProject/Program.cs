@@ -49,7 +49,7 @@ app.MapPost("/login", (HttpContext context) =>
 <body>
 <h1>Simple Framework</h1>
 <br/>
-Welcome to the Page!
+Welcome you have successfully implemented basic login functionality without MVC framework!
 </body>
 </html>";
         WriteHtml(context, html);
