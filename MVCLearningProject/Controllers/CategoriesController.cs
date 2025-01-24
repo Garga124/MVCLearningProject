@@ -12,6 +12,7 @@ namespace MVCLearningProject.Controllers
         }
         public IActionResult Edit(int? id)
         {
+            ViewBag.Action = "Edit";
            var category = CategoriesRepository.GetCategory(id.HasValue ? id.Value : 0);
            return View(category);
         }
@@ -30,6 +31,7 @@ namespace MVCLearningProject.Controllers
 
         public IActionResult Add()
         {
+            ViewBag.Action = "Add";
             return View();
         }
         [HttpPost]
