@@ -1,7 +1,7 @@
-﻿   @model List<Category>
+﻿@model List<Category>
 
 @section title {
-    <h3>Categories</h3>
+    <h3>Manage Categories</h3>
 }
 @if(Model !=null && Model.Count()>0)
 {
@@ -10,6 +10,7 @@
             <tr>
                 <th>Name</th>
                 <th>Description</th>
+                <th></th>
                 <th></th>
             </tr>
         </thead>
@@ -22,12 +23,28 @@
                     <td>@category.Description</td>
                 
                     <td><a class="btn btn-link" asp-controller="categories" asp-action="edit" asp-route-id="@category.CategoryId"> Edit</a></td>
+                    <td><a class="btn btn-link" asp-controller="categories" asp-action="delete" asp-route-categoryId="@category.CategoryId" onclick="return confirmDelete()"> Delete</a></td>
                 </tr>
             }
             
         </tbody>
 
     </table>
+    <div class="row mb-3">
+        <div class="col-2">
+            <a class="btn btn-primary" asp-controller="categories" asp-action="add"> Add</a>
+        </div>
+        <div class="col-6">
+        </div>
+    </div>
 }
-
+@section Scripts
+{
+    <script>
+        function confirmDelete()
+        {
+            return confirm("Are you sure you want to remove this category?");
+        }
+    </script>
+}
 
