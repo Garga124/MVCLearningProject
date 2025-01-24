@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <title>Data Structures</title>
+        <link rel="stylesheet" href="~/lib/bootstrap/css/bootstrap.css"/>
+    </head>
+    <body>
+        <header>
+        <nav id="navmenu" class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3" >
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Learn Datastructure</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a href="/home/index" class="nav-link text-dark">Home</a>
+                         </li>
+                        <li class="nav-item">
+                            <a href="/categories/index" class="nav-link text-dark">Categories</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+           
+          
+        </nav>
+        </header>
+
+        <div class="container">
+            <div class="pb-3">
+                @RenderSection("title")
+                <hr/>
+            </div>
+            <div>
+            @RenderBody()
+            </div>
+            
+        </div>
+    </body>
+</html>
+
