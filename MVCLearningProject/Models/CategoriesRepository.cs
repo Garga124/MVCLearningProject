@@ -33,6 +33,17 @@ namespace MVCLearningProject.Models
             return null;
 
         }
+        public static void UpdateCategory(int categoryId, Category category)
+        {
+            if (categoryId != category.CategoryId)
+                return;
+            var categoryToUpdate = _categories.FirstOrDefault(category => category.CategoryId == categoryId);
+            if (categoryToUpdate !=null)
+            {
+                categoryToUpdate.Name = category.Name;
+                categoryToUpdate.Description = category.Description;
+            }
+        }
 
         public static void DeleteCategory(int categoryId)
         {
