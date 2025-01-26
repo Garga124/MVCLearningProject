@@ -9,7 +9,7 @@ Welcome to the ASP.NET Core 8 MVC CRUD Application! This project is designed to 
 
 MVC is a design pattern that separates an application into three main interconnected components:
 
-1. **Model**: Represents the data and business logic. In this application, the Model is responsible for managing the data related to a specific entity (e.g., `Product`).
+1. **Model**: Represents the data and business logic. In this application, the Model is responsible for managing the data related to a specific entity (e.g., `Category`).
    
 2. **View**: Represents the user interface. Views are responsible for displaying data to the user and providing means to interact with that data. In this application, views are created using Razor syntax to render HTML.
 
@@ -18,18 +18,23 @@ MVC is a design pattern that separates an application into three main interconne
 ## Project Structure
 
 ```
-/Models  
-    - Product.cs  
+/Models
+    - CategoriesRepository.cs
+    - Category.cs
+
 /Views  
-    /Products  
+    /Categories  
         - Index.cshtml  
-        - Create.cshtml  
+        - Add.cshtml  
         - Edit.cshtml  
-        - Details.cshtml  
+        - _Category.cshtml
+   /Home
+       - Index.cshtml
+   /Shared
+       - _viewImports.cshtml
+       - _viewStart.cshtml
 /Controllers  
-    - ProductsController.cs  
-/Data  
-    - ApplicationDbContext.cs  
+    - CategoriesController.cs  
 ```
 
 ## Getting Started
