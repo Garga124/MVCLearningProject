@@ -64,7 +64,7 @@ Make sure you have the following installed:
    dotnet run  
    ```
 
-Navigate to `http://localhost:5000/products` in your web browser to access the application.
+Navigate to `http://localhost:7159/Categories` in your web browser to access the application.
 
 ## CRUD Operations
 
