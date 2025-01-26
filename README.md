@@ -50,8 +50,8 @@ Make sure you have the following installed:
 
 1. Clone the repository:
    ```bash  
-   git clone https://github.com/yourusername/aspnetcore8-mvc-crud.git  
-   cd aspnetcore8-mvc-crud  
+   git clone https://github.com/yourusername/MVCLearningProject.git  
+   cd MVCLearningProject  
    ```
 
 2. Restore dependencies:
