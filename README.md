@@ -70,7 +70,7 @@ Navigate to `http://localhost:7159/Categories` in your web browser to access the
 
 ### 1. Create
 
-Users can create a new product by navigating to the "Create" page. The form captures the product name and price, which are then added to the database.
+Users can create a new product by navigating to the "Create" page. The form captures the product name and price, which are then added to the stub repository.
 
 ### 2. Read
 
@@ -78,11 +78,11 @@ The "Index" page displays a list of all products stored in the database. Each pr
 
 ### 3. Update
 
-By clicking "Edit" next to a product, users can modify existing product information. Changes are saved and reflected in the list after submission.
+By clicking "Edit" next to a category, users can modify existing product information. Changes are saved and reflected in the list after submission.
 
 ### 4. Delete
 
-Users can delete a product by clicking the "Delete" button, which prompts for confirmation. Upon confirmation, the product is removed from the database.
+Users can delete a product by clicking the "Delete" next to a category, which prompts for confirmation. Upon confirmation, the product is removed from the stub repository.
 
 ## Conclusion
 
@@ -96,6 +96,6 @@ This project is licensed under the MIT License. See the LICENSE file for details
 
 If you'd like to contribute, please fork the repository and submit a pull request. Your input is welcome and appreciated!
 
-For questions or feedback, reach out via [email](mailto:your.email@example.com).
+For questions or feedback, reach out via [email](mailto:gargaruhi9@gmail.com.com).
 
 Happy coding! 🎉
