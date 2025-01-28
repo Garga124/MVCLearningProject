@@ -70,19 +70,19 @@ Navigate to `http://localhost:7159/Categories` in your web browser to access the
 
 ### 1. Create
 
-Users can create a new product by navigating to the "Create" page. The form captures the product name and price, which are then added to the stub repository.
+Users can create a new product by navigating to the "Categories" page. The form captures the category name and description, which are then added to the stub repository.
 
 ### 2. Read
 
-The "Index" page displays a list of all products stored in the database. Each product entry includes options to view details, edit, or delete.
+The "Categories" page displays a list of all products stored in the stub repository. Each category entry includes options to edit or delete a ctagory.
 
 ### 3. Update
 
-By clicking "Edit" next to a category, users can modify existing product information. Changes are saved and reflected in the list after submission.
+By clicking "Edit" next to a category, users can modify existing category information. Changes are saved and reflected in the list after submission.
 
 ### 4. Delete
 
-Users can delete a product by clicking the "Delete" next to a category, which prompts for confirmation. Upon confirmation, the product is removed from the stub repository.
+Users can delete a product by clicking the "Delete" next to a category, which prompts for confirmation. Upon confirmation, the category is removed from the stub repository.
 
 ## Conclusion
 
