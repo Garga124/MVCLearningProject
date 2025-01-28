@@ -70,11 +70,11 @@ Navigate to `http://localhost:7159/Categories` in your web browser to access the
 
 ### 1. Create
 
-Users can create a new product by navigating to the "Categories" page. The form captures the category name and description, which are then added to the stub repository.
+Users can create a new category by navigating to the "Categories" page. The form captures the category name and description, which are then added to the stub repository.
 
 ### 2. Read
 
-The "Categories" page displays a list of all products stored in the stub repository. Each category entry includes options to edit or delete a ctagory.
+The "Categories" page displays a list of all categories stored in the stub repository. Each category entry includes options to edit or delete a category.
 
 ### 3. Update
 
