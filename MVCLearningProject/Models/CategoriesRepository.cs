@@ -9,6 +9,18 @@ namespace MVCLearningProject.Models
             new Category{CategoryId = 1, Name="Trees", Description="Tree data structure"},
             new Category{CategoryId = 2, Name="Graphs", Description="Graph data structure"},
             new Category{CategoryId = 3, Name="Arrays", Description="Array data structure"},
+            new Category{CategoryId = 4, Name="Trees", Description="Tree data structure"},
+            new Category{CategoryId = 5, Name="Graphs", Description="Graph data structure"},
+            new Category{CategoryId = 6, Name="Arrays", Description="Array data structure"},
+            new Category{CategoryId = 7, Name="Trees", Description="Tree data structure"},
+            new Category{CategoryId = 10, Name="Graphs", Description="Graph data structure"},
+            new Category{CategoryId = 11, Name="Arrays", Description="Array data structure"},
+            new Category{CategoryId = 12, Name="Trees", Description="Tree data structure"},
+            new Category{CategoryId = 13, Name="Graphs", Description="Graph data structure"},
+            new Category{CategoryId = 14, Name="Arrays", Description="Array data structure"},
+            new Category{CategoryId = 15, Name="Trees", Description="Tree data structure"},
+            new Category{CategoryId = 16, Name="Graphs", Description="Graph data structure"},
+            new Category{CategoryId = 17, Name="Arrays", Description="Array data structure"},
             };
         public static void AddCategory(Category category)
         {

@@ -1,45 +1,57 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-        <title>Data Structures</title>
-        <link rel="stylesheet" href="~/lib/bootstrap/css/bootstrap.css"/>
-    </head>
-    <body>
-        <header>
-        <nav id="navmenu" class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3" >
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Learn Datastructure</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a asp-controller="Home" asp-action="index" class="nav-link text-dark">Home</a>
-                         </li>
-                        <li class="nav-item">
-                            <a asp-controller="Categories" asp-action="index" class="nav-link text-dark">Categories</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Data Structure Tutorial</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+   
+    <!-- Vendor CSS Files -->
+    <link href="~/template/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/template/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  
+    <!-- Main CSS File -->
+    <link href="~/template/css/main.css" rel="stylesheet">
+
+</head>
+
+<body class="index-page">
+
+    <header id="header" class="header d-flex align-items-center" style="--background-color: rgba(77, 44, 169, 0.9);">
+        <div class="container-fluid container-xl position-relative d-flex align-items-center">
+            <a class="logo d-flex align-items-center me-auto" asp-area="" asp-controller="Home" asp-action="Index">
            
-          
-        </nav>
-        </header>
+                <h1 class="sitename">Data Structure Tutorial</h1>
+            </a>
 
-        <div class="container">
-            <div class="pb-3">
-                @RenderSection("title")
-                <hr/>
-            </div>
-            <div>
-            @RenderBody()
-            </div>
+            <nav id="navmenu" class="navmenu">
+                <ul>
+                    <li>
+                        <a asp-controller="Home" asp-action="index" class="active">Home</a>
+                    </li>
+                    <li>
+                        <a asp-controller="Categories" asp-action="index">Categories</a>
+                    </li>
+                  
+                </ul>
+                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+            </nav>
         </div>
-        @await RenderSectionAsync("Scripts",required:false)
-    </body>
-</html>
+    </header>
+    <div class="container container mt-5">
+        <div class="pb-3">
+            @RenderSection("title")
+            <hr />
+        </div>
+        <div>
+            @RenderBody()
+        </div>
+    </div>
+    @await RenderSectionAsync("Scripts", required: false)
 
+</body>
+
+</html>
