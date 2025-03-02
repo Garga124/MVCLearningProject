@@ -39,6 +39,7 @@ namespace MVCLearningProject.Controllers
         {
             if (ModelState.IsValid)
             {
+             
                 CategoriesRepository.AddCategory(category);
                 return RedirectToAction(nameof(Index));
             }

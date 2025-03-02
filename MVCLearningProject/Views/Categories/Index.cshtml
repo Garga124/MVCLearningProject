@@ -19,16 +19,12 @@
             {
                 <tr>
                     <td>@category.Name</td>
-               
                     <td>@category.Description</td>
-                
                     <td><a class="btn btn-link" asp-controller="categories" asp-action="edit" asp-route-id="@category.CategoryId"> Edit</a></td>
                     <td><a class="btn btn-link" asp-controller="categories" asp-action="delete" asp-route-categoryId="@category.CategoryId" onclick="return confirmDelete()"> Delete</a></td>
                 </tr>
             }
-            
         </tbody>
-
     </table>
     <div class="row mb-3">
         <div class="col-2">
