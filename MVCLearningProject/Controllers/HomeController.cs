@@ -8,9 +8,6 @@ namespace MVCLearningProject.Controllers
         {
             return View();
         }
-        //public string Error()
-        //{
-        //    return "I have an error here.";
-        //}
+       
     }
 }
